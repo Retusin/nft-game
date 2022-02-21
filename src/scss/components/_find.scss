@@ -13,6 +13,11 @@
     margin-bottom: 110px;
     max-width: 980px;
     text-align: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -30,6 +35,10 @@
     line-height: 42px;
     text-align: center;
     color: #fff;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   &__btn {

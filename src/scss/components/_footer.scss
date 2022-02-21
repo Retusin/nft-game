@@ -1,6 +1,9 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 107px;
+  background-image: url("../img/footer-bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-color: #162758;
 
   &__title {
@@ -15,11 +18,26 @@
     margin: 0 auto;
     margin-bottom: 77px;
     max-width: 848px;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
     }
   }
 
@@ -36,6 +54,10 @@
   max-width: 700px;
   background: rgba(0, 0, 0, 0.3);
 
+  @include mobile {
+    padding: 23px 25px;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 15px;
@@ -48,5 +70,13 @@
     font-size: 25px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.8);
+
+    @include small-tablet {
+      font-size: 15px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 }

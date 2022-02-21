@@ -21,7 +21,7 @@ console.log(mobileCheck());
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from "./functions/burger";
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -49,23 +49,8 @@ console.log(mobileCheck());
 //   placement: 'right'
 // });
 
-// Подключение свайпера
-import Swiper, { Navigation, Pagination } from "swiper";
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
-  spaceBetween: 54,
-  slidesPerGroup: 4,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 // Подключение анимаций по скроллу
-import AOS from 'aos';
+import AOS from "aos";
 AOS.init();
 
 // Подключение параллакса блоков при скролле

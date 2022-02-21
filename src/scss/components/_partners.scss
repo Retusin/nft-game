@@ -12,9 +12,19 @@
   &__list {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
     &:not(:last-child) {
       margin-right: 20px;
     }

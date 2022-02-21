@@ -24,11 +24,19 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 50px 40px;
+
+    @include semi-desktop {
+      display: block;
+    }
   }
 
   &__item {
     border-radius: 30px;
     background-repeat: no-repeat;
+
+    @include semi-desktop {
+      margin-bottom: 30px;
+    }
 
     &--game {
       grid-column: span 12;
@@ -43,6 +51,23 @@
         font-size: 24px;
         line-height: 29px;
         color: rgba(255, 255, 255, 0.6);
+
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+
+      @include semi-desktop {
+        padding: 356px 50px 30px 43px;
+      }
+
+      @include small-tablet {
+        background-size: 85%;
+      }
+
+      @include mobile {
+        padding: 292px 64px 7px 26px;
+        background-position: center top 80px;
       }
     }
 
@@ -53,6 +78,14 @@
       background-image: url("../img/play-2.svg");
       background-position: left 30px top 30px;
       background-repeat: no-repeat;
+
+      @include semi-desktop {
+        grid-column: span 12;
+      }
+
+      @include small-tablet {
+        padding: 212px 64px 7px 26px;
+      }
     }
 
     &--events {
@@ -62,6 +95,14 @@
       background-position: left 30px top 49px;
       background-repeat: no-repeat;
       background-color: #067ccb;
+
+      @include semi-desktop {
+        grid-column: span 12;
+      }
+
+      @include small-tablet {
+        padding: 212px 64px 7px 26px;
+      }
     }
   }
 
@@ -72,6 +113,10 @@
     font-size: 30px;
     line-height: 36px;
     color: #fff;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__text {
@@ -82,5 +127,9 @@
     line-height: 33px;
     color: #fff;
     opacity: 0.8;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }

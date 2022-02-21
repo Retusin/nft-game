@@ -16,6 +16,17 @@
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
+
+    @include big-desktop {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include small {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -39,6 +50,15 @@
     &--defi {
       background-image: url("../img/works-3.svg");
     }
+
+    @include big-desktop {
+      height: 600px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      background-position: top left;
+    }
   }
 
   &__caption {
@@ -48,6 +68,10 @@
     font-size: 35px;
     line-height: 42px;
     color: #fff;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   &__subtitle {
@@ -55,6 +79,10 @@
     line-height: 24px;
     color: #fff;
     opacity: 0.3;
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
 
   &__description {
@@ -63,5 +91,10 @@
     font-size: 25px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.7);
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 }

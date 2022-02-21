@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-color: #101932;
 
+  @include big-desktop {
+    background-image: none;
+  }
+
   &__container {
     max-width: 1655px;
   }
@@ -25,6 +29,11 @@
     background-repeat: no-repeat;
     background-color: rgba(56, 77, 112, 0.2);
 
+    @include small-tablet {
+      padding: 181px 17px 35px 14px;
+      background-position: left 23px top 18px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 58px;
     }
@@ -41,12 +50,22 @@
     &--2 {
       padding: 35px 123px 35px 227px;
       background-image: url("../img/roadmap-2.svg");
+
+      @include small-tablet {
+        padding: 181px 17px 35px 14px;
+        background-position: left 23px top 18px;
+      }
     }
 
     &--3 {
       padding: 35px 63px 35px 185px;
       background-image: url("../img/roadmap-3.svg");
       background-position: top 32px left 29px;
+
+      @include small-tablet {
+        padding: 181px 17px 35px 14px;
+        background-position: left 23px top 18px;
+      }
     }
 
     &--4 {
@@ -54,6 +73,11 @@
       background-image: url("../img/roadmap-4.svg");
       background-position: top 32px left 29px;
       background-color: #384d70;
+
+      @include small-tablet {
+        padding: 181px 17px 35px 14px;
+        background-position: left 23px top 18px;
+      }
     }
 
     &--5 {
@@ -61,6 +85,11 @@
       background-image: url("../img/roadmap-5.svg");
       background-position: top 32px left 29px;
       background-color: #384d70;
+
+      @include small-tablet {
+        padding: 181px 17px 35px 14px;
+        background-position: left 23px top 18px;
+      }
     }
   }
   &__caption {
