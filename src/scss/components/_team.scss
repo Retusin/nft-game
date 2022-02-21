@@ -1,0 +1,64 @@
+.team {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: #162344;
+
+  &__container {
+    max-width: 1590px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__slider {
+    padding-bottom: 70px;
+  }
+
+  &__slide {
+    max-width: 350px;
+  }
+
+  &__img {
+    margin-bottom: 13px;
+    border-radius: 30px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__position {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+  }
+}
+
+.swiper .swiper-pagination {
+  bottom: 10;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+  background: #a2a7b4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $accent;
+}

@@ -1,0 +1,85 @@
+.roadmap {
+  padding-top: 70px;
+  padding-bottom: 121px;
+  background-image: url("../img/line.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #101932;
+
+  &__container {
+    max-width: 1655px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  &__item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 35px 135px 35px 198px;
+    max-width: 792px;
+    background-position: left 30px center;
+    background-repeat: no-repeat;
+    background-color: rgba(56, 77, 112, 0.2);
+
+    &:not(:last-child) {
+      margin-bottom: 58px;
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+      background-position: top 32px left 29px;
+    }
+
+    &--1 {
+      background-image: url("../img/august.svg");
+    }
+
+    &--2 {
+      padding: 35px 123px 35px 227px;
+      background-image: url("../img/roadmap-2.svg");
+    }
+
+    &--3 {
+      padding: 35px 63px 35px 185px;
+      background-image: url("../img/roadmap-3.svg");
+      background-position: top 32px left 29px;
+    }
+
+    &--4 {
+      padding: 35px 63px 35px 198px;
+      background-image: url("../img/roadmap-4.svg");
+      background-position: top 32px left 29px;
+      background-color: #384d70;
+    }
+
+    &--5 {
+      padding: 35px 63px 35px 198px;
+      background-image: url("../img/roadmap-5.svg");
+      background-position: top 32px left 29px;
+      background-color: #384d70;
+    }
+  }
+  &__caption {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+  }
+  &__roster {
+    list-style: disc;
+    padding-left: 18px;
+  }
+  &__point {
+    margin: 0;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+  }
+}

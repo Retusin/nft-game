@@ -1,0 +1,27 @@
+// Ограничение макета
+$wrapper-max: 1920px !default;
+$wrapper-min: 280px !default;
+
+// Контейнер
+$container-max-widths: 1766px;
+$container-padding: 15px;
+
+// Контрольные точки
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+// Шрифт
+$font-family-base: "SFProDisplay", sans-serif;
+$font-weight-base: 600;
+$font-style-base: normal;
+
+// Цвета
+$color-bg-base: #fff;
+$color-text-base: #61594d;
+$accent: #e11d2e;

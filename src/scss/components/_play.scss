@@ -1,0 +1,86 @@
+.play {
+  padding-top: 110px;
+  padding-bottom: 175px;
+  background-color: #101932;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px 40px;
+  }
+
+  &__item {
+    border-radius: 30px;
+    background-repeat: no-repeat;
+
+    &--game {
+      grid-column: span 12;
+      padding: 36px 50px 30px 740px;
+      background: #071022;
+      background-image: url("../img/play-1.svg");
+      background-position: left 50px top 35px;
+      background-repeat: no-repeat;
+
+      .play__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    &--cash {
+      grid-column: span 6;
+      padding: 34px 64px 7px 213px;
+      background: #ff9429;
+      background-image: url("../img/play-2.svg");
+      background-position: left 30px top 30px;
+      background-repeat: no-repeat;
+    }
+
+    &--events {
+      grid-column: span 6;
+      padding: 38px 38px 4px 240px;
+      background-image: url("../img/play-3.svg");
+      background-position: left 30px top 49px;
+      background-repeat: no-repeat;
+      background-color: #067ccb;
+    }
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #fff;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,49 @@
+.find {
+  padding-top: 50px;
+  padding-bottom: 293px;
+  background-image: url("../img/find-bg.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-color: #101932;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    max-width: 980px;
+    text-align: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 209px;
+    max-width: 552px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 13px 23px;
+    max-width: 217px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background-color: $accent;
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,19 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключениe страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/find";
+@import "./components/works";
+@import "./components/play";
+@import "./components/invest";
+@import "./components/roadmap";
+@import "./components/team";
+@import "./components/partners";
+@import "./components/tokenomics";
+@import "./components/faq";
+@import "./components/footer";

@@ -1,0 +1,27 @@
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.8;
+
+    &--btn {
+      margin-left: 49px;
+      border-radius: 10px;
+      padding: 11px 30px;
+      background: #ac1216;
+    }
+  }
+}

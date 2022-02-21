@@ -1,0 +1,22 @@
+.partners {
+  padding-top: 28px;
+  padding-bottom: 140px;
+  background-color: #162344;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 39px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
